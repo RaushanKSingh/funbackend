@@ -9,7 +9,9 @@ app.get("/", (req, res) => {
 app.get("/login", (req, res) => {
   res.send("<h1>Hello: Pls Login</h1>");
 });
-
+app.get("/signup", (req, res) => {
+  res.send("<h1>Hello: Pls SignUp</h1>");
+});
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`);
 });
